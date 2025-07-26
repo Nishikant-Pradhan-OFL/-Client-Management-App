@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Management App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="assets/logo.png" alt="Client Manager Logo" class="logo">
+    <h1>Client Management</h1>
+
+    <form id="client-form">
+      <input type="text" id="name" placeholder="Client Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <textarea id="notes" placeholder="Notes"></textarea>
+      <button type="submit">Add Client</button>
+    </form>
+    <input type="text" id="search" placeholder="Search by name...">
+    <button onclick="exportCSV()">Export to CSV</button>
+    <div id="client-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <footer>
+  <p>© 2025 Client Management App. Trademark of <strong>NISHIKANT</strong>.</p>
+  </footer>
+
+</body>
+</html>
